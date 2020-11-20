@@ -6,3 +6,39 @@ header,
 section {
     padding: 1rem;
 }
+
+p {
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+
+h2 {
+    background-color: tomato;
+    padding: 1rem 0.5rem;
+    color: #fff;
+    /*Works because there are siblings to scroll through*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.snowflake {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+}
+
+h1 {
+    /*Doesn't work, no siblings to scroll through*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+h3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 104px;
+    background-color: #fff;
+}
